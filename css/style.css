@@ -1,0 +1,252 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: 'Open Sans', sans-serif;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #0b1d27;
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0C4n.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1y4n.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/playfairdisplay/v36/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKdFvUDQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/playfairdisplay/v36/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKeiukDQ.ttf) format('truetype');
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.clear {
+  clear: both;
+}
+.w50 {
+  width: 50%;
+}
+header {
+  width: 100%;
+  height: 780px;
+  background-image: url(../imagens/bg-header.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+header .escurecer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(11, 29, 39, 0.3);
+}
+header .navegacao {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 30px;
+  position: relative;
+}
+header .navegacao .logo {
+  color: #FFF;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  z-index: 2;
+  line-height: normal;
+}
+header .navegacao .descktop {
+  z-index: 2;
+}
+header .navegacao .descktop ul {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  z-index: 2;
+}
+header .navegacao .descktop ul a {
+  color: #FFF;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  z-index: 2;
+}
+@media screen and (max-width: 760px) {
+  header .navegacao .descktop ul {
+    display: none;
+  }
+}
+header .navegacao .mobile {
+  z-index: 5;
+}
+header .navegacao .mobile h3 {
+  float: right;
+  color: #fff;
+  font-size: 30px;
+  display: none;
+}
+@media screen and (max-width: 760px) {
+  header .navegacao .mobile h3 {
+    display: block;
+  }
+}
+header .navegacao .mobile ul {
+  background-color: #0b1d27;
+  width: 100%;
+  height: 400px;
+  z-index: 5;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  left: 0;
+  display: none;
+}
+header .navegacao .mobile ul li {
+  text-align: center;
+  padding: 30px 0;
+}
+header .navegacao .mobile ul li a {
+  color: #FFF;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  cursor: pointer;
+}
+header .navegacao .mobile ul li a::after {
+  content: '';
+  display: block;
+  width: 100px;
+  height: 2px;
+  background-color: #e0da50;
+  margin: 2px auto;
+}
+header .navegacao .mobile ul li i {
+  color: #fff;
+  cursor: pointer;
+}
+header .navegacao .conta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  z-index: 2;
+}
+header .navegacao .conta a {
+  color: #FFF;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  cursor: pointer;
+}
+header .navegacao .conta i {
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+}
+@media screen and (max-width: 760px) {
+  header .navegacao .conta {
+    display: none;
+  }
+}
+header .chamada-header {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 550px;
+  margin: 220px auto 0 auto;
+}
+header .chamada-header p {
+  color: #E0DA50;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  z-index: 2;
+}
+header .chamada-header p::before {
+  content: '';
+  display: inline-block;
+  width: 87px;
+  height: 3px;
+  background-color: #e0da50;
+  z-index: 2;
+  margin-right: 10px;
+  vertical-align: 10px;
+}
+header .chamada-header h2 {
+  color: #FFF;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  z-index: 2;
+}
+@media screen and (max-width: 530px) {
+  header .chamada-header h2 {
+    font-size: 2.4em;
+  }
+}
+@media screen and (max-width: 402px) {
+  header .chamada-header h2 {
+    font-size: 2em;
+  }
+}
+header .chamada-header .mais {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  z-index: 2;
+}
+header .chamada-header .mais a {
+  color: #FFF;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  cursor: pointer;
+}
+header .chamada-header .mais i {
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+@media screen and (max-width: 760px) {
+  header .chamada-header .mais {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 760px) {
+  header .chamada-header {
+    text-align: center;
+  }
+}
