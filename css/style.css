@@ -462,3 +462,180 @@ header .chamada-header .mais i {
     height: auto;
   }
 }
+.viaje-info02 {
+  height: 100%;
+}
+.viaje-info02 .container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 5px;
+}
+.viaje-info02 .container .box-info01 {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+.viaje-info02 .container .box-info01 span {
+  font-size: 200px;
+  color: rgba(255, 255, 255, 0.2);
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  z-index: 2;
+  position: absolute;
+  left: -120px;
+  top: 10px;
+}
+@media screen and (max-width: 850px) {
+  .viaje-info02 .container .box-info01 span {
+    left: -100px;
+  }
+}
+@media screen and (max-width: 803px) {
+  .viaje-info02 .container .box-info01 span {
+    left: -80px;
+  }
+}
+@media screen and (max-width: 774px) {
+  .viaje-info02 .container .box-info01 span {
+    color: rgba(255, 255, 255, 0.4);
+    position: static;
+    top: auto;
+    left: auto;
+  }
+}
+@media screen and (max-width: 404px) {
+  .viaje-info02 .container .box-info01 span {
+    margin-top: -140px;
+  }
+}
+@media screen and (max-width: 353px) {
+  .viaje-info02 .container .box-info01 span {
+    font-size: 150px;
+  }
+}
+.viaje-info02 .container .box-info01 .info {
+  display: flex;
+  flex-direction: column;
+}
+.viaje-info02 .container .box-info01 .info h4 {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: #e0da50;
+}
+.viaje-info02 .container .box-info01 .info h4::before {
+  content: '';
+  display: inline-block;
+  width: 80px;
+  height: 3px;
+  background-color: #e0da50;
+  vertical-align: 5px;
+  margin-right: 10px;
+}
+@media screen and (max-width: 796px) {
+  .viaje-info02 .container .box-info01 .info h4::before {
+    width: 60px;
+  }
+}
+@media screen and (max-width: 377px) {
+  .viaje-info02 .container .box-info01 .info h4::before {
+    width: 30px;
+  }
+}
+@media screen and (max-width: 796px) {
+  .viaje-info02 .container .box-info01 .info h4 {
+    font-size: 1em;
+  }
+}
+.viaje-info02 .container .box-info01 .info h2 {
+  color: #FFF;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  font-family: 'Playfair Display SC', serif;
+  padding: 10px 0;
+}
+@media screen and (max-width: 1185px) {
+  .viaje-info02 .container .box-info01 .info h2 {
+    font-size: 2em;
+  }
+}
+@media screen and (max-width: 956px) {
+  .viaje-info02 .container .box-info01 .info h2 {
+    font-size: 1.6em;
+  }
+}
+@media screen and (max-width: 390px) {
+  .viaje-info02 .container .box-info01 .info h2 {
+    font-size: 1.3em;
+  }
+}
+.viaje-info02 .container .box-info01 .info p {
+  color: #FFF;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+@media screen and (max-width: 774px) {
+  .viaje-info02 .container .box-info01 .info p {
+    max-width: 550px;
+  }
+}
+.viaje-info02 .container .box-info01 .info .mais-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+.viaje-info02 .container .box-info01 .info .mais-info a {
+  color: #e0da50;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  cursor: pointer;
+}
+.viaje-info02 .container .box-info01 .info .mais-info i {
+  color: #e0da50;
+  cursor: pointer;
+}
+@media screen and (max-width: 774px) {
+  .viaje-info02 .container .box-info01 {
+    width: 100%;
+  }
+}
+.viaje-info02 .container .box-info02 {
+  width: 50%;
+  height: 100%;
+}
+.viaje-info02 .container .box-info02 .box-img {
+  width: 300px;
+  height: 350px;
+}
+.viaje-info02 .container .box-info02 .box-img img {
+  width: 100%;
+  object-fit: cover;
+}
+@media screen and (max-width: 774px) {
+  .viaje-info02 .container .box-info02 .box-img {
+    margin: 20px auto 0 auto;
+  }
+}
+@media screen and (max-width: 404px) {
+  .viaje-info02 .container .box-info02 .box-img {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media screen and (max-width: 774px) {
+  .viaje-info02 .container .box-info02 {
+    width: 100%;
+  }
+}
