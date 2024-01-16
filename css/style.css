@@ -902,3 +902,124 @@ header .chamada-header .mais i {
     height: auto;
   }
 }
+footer {
+  padding: 20px 0;
+  margin-top: 60px;
+}
+footer .container {
+  max-width: 1100px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+footer .container .box-footer-01 {
+  width: 60%;
+}
+footer .container .box-footer-01 a {
+  color: #FFF;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  z-index: 2;
+  line-height: normal;
+}
+footer .container .box-footer-01 p {
+  color: #fff;
+  font-size: 16px;
+  padding-top: 20px;
+}
+@media screen and (max-width: 770px) {
+  footer .container .box-footer-01 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+footer .container .box-footer-02 {
+  width: 20%;
+}
+footer .container .box-footer-02 h3 {
+  color: #e0da50;
+  font-size: 16px;
+}
+footer .container .box-footer-02 nav {
+  padding-top: 20px;
+}
+footer .container .box-footer-02 nav ul {
+  display: flex;
+  flex-direction: column;
+}
+footer .container .box-footer-02 nav ul li {
+  padding-bottom: 10px;
+}
+footer .container .box-footer-02 nav ul li a {
+  color: #fff;
+  font-size: 15px;
+  font-weight: normal;
+}
+@media screen and (max-width: 770px) {
+  footer .container .box-footer-02 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+  }
+}
+footer .container .box-footer-03 {
+  float: right;
+}
+footer .container .box-footer-03 h3 {
+  color: #e0da50;
+  font-size: 16px;
+  float: right;
+}
+@media screen and (max-width: 770px) {
+  footer .container .box-footer-03 h3 {
+    float: none;
+  }
+}
+footer .container .box-footer-03 nav {
+  padding-top: 20px;
+}
+footer .container .box-footer-03 nav ul {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  width: 100%;
+}
+footer .container .box-footer-03 nav ul li {
+  padding-bottom: 10px;
+}
+footer .container .box-footer-03 nav ul li a {
+  color: #fff;
+  font-size: 15px;
+  font-weight: normal;
+}
+@media screen and (max-width: 770px) {
+  footer .container .box-footer-03 nav ul {
+    margin-top: 0;
+  }
+}
+@media screen and (max-width: 770px) {
+  footer .container .box-footer-03 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 770px) {
+  footer .container {
+    max-width: 100%;
+  }
+}
+footer .direitos .container p {
+  color: #535252;
+}
+@media screen and (max-width: 1100px) {
+  footer {
+    padding: 20px 10px;
+  }
+}
