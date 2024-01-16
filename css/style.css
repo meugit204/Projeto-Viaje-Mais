@@ -268,46 +268,58 @@ header .chamada-header .mais i {
   }
 }
 .viaje-info {
-  height: 400px;
+  height: 500px;
+  margin-top: -80px;
 }
 .viaje-info .container {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
   padding: 0 5px;
+  height: 100%;
+  max-width: 1100px;
 }
 .viaje-info .container .box-info01 {
-  width: 60%;
-  height: 100%;
+  width: 50%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
   position: relative;
+  margin: 70px auto 0 auto;
 }
-.viaje-info .container .box-info01 span {
+.viaje-info .container .box-info01 .info {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  position: absolute;
+  top: -270px;
+  left: -70px;
+}
+.viaje-info .container .box-info01 .info span {
   font-size: 200px;
   color: rgba(255, 255, 255, 0.2);
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  z-index: 2;
   position: absolute;
   left: 0;
-  top: -170px;
-  z-index: 2;
+  top: -130px;
 }
-@media screen and (max-width: 774px) {
-  .viaje-info .container .box-info01 span {
-    left: 50%;
-    transform: translate(-50%, 0);
-    color: rgba(255, 255, 255, 0.4);
+@media screen and (max-width: 410px) {
+  .viaje-info .container .box-info01 .info span {
+    font-size: 120px;
+    top: -70px;
   }
 }
-@media screen and (max-width: 353px) {
-  .viaje-info .container .box-info01 span {
-    font-size: 150px;
-    top: -140px;
-  }
+.viaje-info .container .box-info01 .info .info02 {
+  margin-left: 100px;
 }
-.viaje-info .container .box-info01 .info {
-  position: absolute;
-  top: -60px;
-  left: 60px;
+@media screen and (max-width: 780px) {
+  .viaje-info .container .box-info01 .info .info02 {
+    margin-left: 0;
+  }
 }
 .viaje-info .container .box-info01 .info h4 {
   font-size: 20px;
@@ -327,26 +339,36 @@ header .chamada-header .mais i {
 }
 .viaje-info .container .box-info01 .info h2 {
   color: #FFF;
-  font-size: 40px;
+  font-size: 2em;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   font-family: 'Playfair Display SC', serif;
   padding: 10px 0;
 }
-@media screen and (max-width: 997px) {
+@media screen and (max-width: 949px) {
+  .viaje-info .container .box-info01 .info h2 {
+    font-size: 1.7em;
+  }
+}
+@media screen and (max-width: 863px) {
+  .viaje-info .container .box-info01 .info h2 {
+    font-size: 1.4em;
+  }
+}
+@media screen and (max-width: 780px) {
   .viaje-info .container .box-info01 .info h2 {
     font-size: 2em;
   }
 }
-@media screen and (max-width: 881px) {
+@media screen and (max-width: 458px) {
   .viaje-info .container .box-info01 .info h2 {
-    font-size: 1.6em;
+    font-size: 1.7em;
   }
 }
-@media screen and (max-width: 353px) {
+@media screen and (max-width: 394px) {
   .viaje-info .container .box-info01 .info h2 {
-    font-size: 1.2em;
+    font-size: 1.4em;
   }
 }
 .viaje-info .container .box-info01 .info p {
@@ -358,24 +380,14 @@ header .chamada-header .mais i {
   width: 100%;
   max-width: 550px;
 }
-@media screen and (max-width: 963px) {
+@media screen and (max-width: 876px) {
   .viaje-info .container .box-info01 .info p {
-    max-width: 450px;
+    max-width: 350px;
   }
 }
-@media screen and (max-width: 891px) {
+@media screen and (max-width: 780px) {
   .viaje-info .container .box-info01 .info p {
-    max-width: 400px;
-  }
-}
-@media screen and (max-width: 850px) {
-  .viaje-info .container .box-info01 .info p {
-    max-width: 340px;
-  }
-}
-@media screen and (max-width: 774px) {
-  .viaje-info .container .box-info01 .info p {
-    max-width: 550px;
+    max-width: 100%;
   }
 }
 .viaje-info .container .box-info01 .info .mais-info {
@@ -396,24 +408,31 @@ header .chamada-header .mais i {
   color: #e0da50;
   cursor: pointer;
 }
-@media screen and (max-width: 810px) {
+@media screen and (max-width: 945px) {
   .viaje-info .container .box-info01 .info {
-    left: 30px;
+    left: -45px;
   }
 }
-@media screen and (max-width: 774px) {
+@media screen and (max-width: 900px) {
+  .viaje-info .container .box-info01 .info {
+    left: -55px;
+  }
+}
+@media screen and (max-width: 780px) {
   .viaje-info .container .box-info01 .info {
     position: static;
     top: auto;
     left: auto;
-    margin-top: 60px;
   }
 }
-@media screen and (max-width: 774px) {
+@media screen and (max-width: 780px) {
   .viaje-info .container .box-info01 {
     width: 100%;
-    display: flex;
-    justify-content: center;
+  }
+}
+@media screen and (max-width: 460px) {
+  .viaje-info .container .box-info01 {
+    padding: 20px 10px;
   }
 }
 .viaje-info .container .box-info02 {
@@ -424,7 +443,7 @@ header .chamada-header .mais i {
 .viaje-info .container .box-info02 .box-img {
   position: absolute;
   right: 0;
-  top: -180px;
+  top: -80px;
   width: 384px;
   height: 564px;
 }
@@ -432,53 +451,70 @@ header .chamada-header .mais i {
   width: 100%;
   object-fit: cover;
 }
-@media screen and (max-width: 774px) {
-  .viaje-info .container .box-info02 .box-img {
-    position: static;
-    top: auto;
-    right: auto;
-    margin: 20px auto 0 auto;
-  }
-}
-@media screen and (max-width: 393px) {
+@media screen and (max-width: 876px) {
   .viaje-info .container .box-info02 .box-img {
     width: 100%;
     height: auto;
   }
 }
-@media screen and (max-width: 774px) {
+@media screen and (max-width: 780px) {
+  .viaje-info .container .box-info02 .box-img {
+    width: 384px;
+    height: auto;
+    position: static;
+    right: auto;
+    top: auto;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 450px) {
+  .viaje-info .container .box-info02 .box-img {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 780px) {
   .viaje-info .container .box-info02 {
     width: 100%;
   }
 }
-@media screen and (max-width: 774px) {
+@media screen and (max-width: 780px) {
   .viaje-info .container {
-    display: flex;
     flex-direction: column-reverse;
   }
 }
-@media screen and (max-width: 774px) {
+@media screen and (max-width: 780px) {
   .viaje-info {
+    width: 100%;
     height: auto;
   }
 }
-.viaje-info02 {
-  height: 100%;
+.viaje-info-02 {
+  height: auto;
+  margin-top: 80px;
 }
-.viaje-info02 .container {
+.viaje-info-02 .container {
   display: flex;
   flex-wrap: wrap;
-  padding: 0 5px;
-}
-.viaje-info02 .container .box-info01 {
-  width: 50%;
-  display: flex;
-  justify-content: center;
+  flex-direction: row-reverse;
   align-items: center;
+  padding: 0 5px;
+  height: 100%;
+  max-width: 1100px;
+}
+.viaje-info-02 .container .box-info01 {
+  width: 50%;
+  max-width: 100%;
+  height: auto;
+  display: flex;
   flex-direction: column;
+  align-items: center;
   position: relative;
 }
-.viaje-info02 .container .box-info01 span {
+.viaje-info-02 .container .box-info01 .info {
+  display: flex;
+  flex-direction: column;
+}
+.viaje-info-02 .container .box-info01 .info span {
   font-size: 200px;
   color: rgba(255, 255, 255, 0.2);
   font-style: normal;
@@ -486,49 +522,36 @@ header .chamada-header .mais i {
   line-height: normal;
   z-index: 2;
   position: absolute;
-  left: -120px;
-  top: 10px;
+  left: 0;
+  top: -130px;
 }
-@media screen and (max-width: 850px) {
-  .viaje-info02 .container .box-info01 span {
-    left: -100px;
+@media screen and (max-width: 410px) {
+  .viaje-info-02 .container .box-info01 .info span {
+    font-size: 120px;
+    top: -70px;
   }
 }
-@media screen and (max-width: 803px) {
-  .viaje-info02 .container .box-info01 span {
-    left: -80px;
+.viaje-info-02 .container .box-info01 .info .info02 {
+  margin-left: 100px;
+}
+@media screen and (max-width: 908px) {
+  .viaje-info-02 .container .box-info01 .info .info02 {
+    margin-left: 60px;
   }
 }
-@media screen and (max-width: 774px) {
-  .viaje-info02 .container .box-info01 span {
-    color: rgba(255, 255, 255, 0.4);
-    position: static;
-    top: auto;
-    left: auto;
+@media screen and (max-width: 780px) {
+  .viaje-info-02 .container .box-info01 .info .info02 {
+    margin-left: 0;
   }
 }
-@media screen and (max-width: 404px) {
-  .viaje-info02 .container .box-info01 span {
-    margin-top: -140px;
-  }
-}
-@media screen and (max-width: 353px) {
-  .viaje-info02 .container .box-info01 span {
-    font-size: 150px;
-  }
-}
-.viaje-info02 .container .box-info01 .info {
-  display: flex;
-  flex-direction: column;
-}
-.viaje-info02 .container .box-info01 .info h4 {
+.viaje-info-02 .container .box-info01 .info h4 {
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   color: #e0da50;
 }
-.viaje-info02 .container .box-info01 .info h4::before {
+.viaje-info-02 .container .box-info01 .info h4::before {
   content: '';
   display: inline-block;
   width: 80px;
@@ -537,64 +560,66 @@ header .chamada-header .mais i {
   vertical-align: 5px;
   margin-right: 10px;
 }
-@media screen and (max-width: 796px) {
-  .viaje-info02 .container .box-info01 .info h4::before {
-    width: 60px;
-  }
-}
-@media screen and (max-width: 377px) {
-  .viaje-info02 .container .box-info01 .info h4::before {
+@media screen and (max-width: 993px) {
+  .viaje-info-02 .container .box-info01 .info h4::before {
     width: 30px;
   }
 }
-@media screen and (max-width: 796px) {
-  .viaje-info02 .container .box-info01 .info h4 {
-    font-size: 1em;
+@media screen and (max-width: 369px) {
+  .viaje-info-02 .container .box-info01 .info h4::before {
+    width: 20px;
   }
 }
-.viaje-info02 .container .box-info01 .info h2 {
+@media screen and (max-width: 369px) {
+  .viaje-info-02 .container .box-info01 .info h4 {
+    font-size: 17px;
+  }
+}
+.viaje-info-02 .container .box-info01 .info h2 {
   color: #FFF;
-  font-size: 40px;
+  font-size: 1.6em;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   font-family: 'Playfair Display SC', serif;
   padding: 10px 0;
 }
-@media screen and (max-width: 1185px) {
-  .viaje-info02 .container .box-info01 .info h2 {
-    font-size: 2em;
+@media screen and (max-width: 967px) {
+  .viaje-info-02 .container .box-info01 .info h2 {
+    font-size: 1.4em;
   }
 }
-@media screen and (max-width: 956px) {
-  .viaje-info02 .container .box-info01 .info h2 {
-    font-size: 1.6em;
+@media screen and (max-width: 359px) {
+  .viaje-info-02 .container .box-info01 .info h2 {
+    font-size: 1.2em;
   }
 }
-@media screen and (max-width: 390px) {
-  .viaje-info02 .container .box-info01 .info h2 {
-    font-size: 1.3em;
-  }
-}
-.viaje-info02 .container .box-info01 .info p {
+.viaje-info-02 .container .box-info01 .info p {
   color: #FFF;
   font-size: 15px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  width: 100%;
+  max-width: 550px;
 }
-@media screen and (max-width: 774px) {
-  .viaje-info02 .container .box-info01 .info p {
-    max-width: 550px;
+@media screen and (max-width: 876px) {
+  .viaje-info-02 .container .box-info01 .info p {
+    max-width: 350px;
   }
 }
-.viaje-info02 .container .box-info01 .info .mais-info {
+@media screen and (max-width: 780px) {
+  .viaje-info-02 .container .box-info01 .info p {
+    max-width: 100%;
+  }
+}
+.viaje-info-02 .container .box-info01 .info .mais-info {
   display: flex;
   align-items: center;
   gap: 10px;
   margin-top: 10px;
 }
-.viaje-info02 .container .box-info01 .info .mais-info a {
+.viaje-info-02 .container .box-info01 .info .mais-info a {
   color: #e0da50;
   font-size: 20px;
   font-style: normal;
@@ -602,40 +627,278 @@ header .chamada-header .mais i {
   line-height: normal;
   cursor: pointer;
 }
-.viaje-info02 .container .box-info01 .info .mais-info i {
+.viaje-info-02 .container .box-info01 .info .mais-info i {
   color: #e0da50;
   cursor: pointer;
 }
-@media screen and (max-width: 774px) {
-  .viaje-info02 .container .box-info01 {
-    width: 100%;
+@media screen and (max-width: 780px) {
+  .viaje-info-02 .container .box-info01 .info {
+    position: static;
+    top: auto;
+    left: auto;
   }
 }
-.viaje-info02 .container .box-info02 {
+@media screen and (max-width: 780px) {
+  .viaje-info-02 .container .box-info01 {
+    width: 100%;
+    padding: 10px 20px;
+  }
+}
+@media screen and (max-width: 460px) {
+  .viaje-info-02 .container .box-info01 {
+    padding: 20px 10px;
+  }
+}
+.viaje-info-02 .container .box-info02 {
   width: 50%;
-  height: 100%;
+  height: auto;
 }
-.viaje-info02 .container .box-info02 .box-img {
-  width: 300px;
-  height: 350px;
+.viaje-info-02 .container .box-info02 .box-img {
+  width: 384px;
+  height: 564px;
 }
-.viaje-info02 .container .box-info02 .box-img img {
+.viaje-info-02 .container .box-info02 .box-img img {
   width: 100%;
   object-fit: cover;
 }
-@media screen and (max-width: 774px) {
-  .viaje-info02 .container .box-info02 .box-img {
-    margin: 20px auto 0 auto;
+@media screen and (max-width: 876px) {
+  .viaje-info-02 .container .box-info02 .box-img {
+    width: 100%;
+    height: auto;
   }
 }
-@media screen and (max-width: 404px) {
-  .viaje-info02 .container .box-info02 .box-img {
-    width: 100%;
-    height: 100%;
+@media screen and (max-width: 780px) {
+  .viaje-info-02 .container .box-info02 .box-img {
+    width: 384px;
+    height: auto;
+    position: static;
+    right: auto;
+    top: auto;
+    margin: 0 auto;
   }
 }
-@media screen and (max-width: 774px) {
-  .viaje-info02 .container .box-info02 {
+@media screen and (max-width: 450px) {
+  .viaje-info-02 .container .box-info02 .box-img {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 780px) {
+  .viaje-info-02 .container .box-info02 {
     width: 100%;
+  }
+}
+@media screen and (max-width: 780px) {
+  .viaje-info-02 .container {
+    flex-direction: column-reverse;
+    gap: 80px;
+  }
+}
+@media screen and (max-width: 780px) {
+  .viaje-info-02 {
+    width: 100%;
+    height: auto;
+  }
+}
+.viaje-info-03 {
+  height: auto;
+  margin-top: 80px;
+}
+.viaje-info-03 .container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 5px;
+  height: 100%;
+  max-width: 1100px;
+}
+.viaje-info-03 .container .box-info01 {
+  width: 50%;
+  max-width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.viaje-info-03 .container .box-info01 .info {
+  display: flex;
+  flex-direction: column;
+}
+.viaje-info-03 .container .box-info01 .info span {
+  font-size: 200px;
+  color: rgba(255, 255, 255, 0.2);
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  z-index: 2;
+  position: absolute;
+  left: 0;
+  top: -130px;
+}
+@media screen and (max-width: 410px) {
+  .viaje-info-03 .container .box-info01 .info span {
+    font-size: 120px;
+    top: -70px;
+  }
+}
+.viaje-info-03 .container .box-info01 .info .info02 {
+  margin-left: 100px;
+}
+@media screen and (max-width: 908px) {
+  .viaje-info-03 .container .box-info01 .info .info02 {
+    margin-left: 60px;
+  }
+}
+@media screen and (max-width: 867px) {
+  .viaje-info-03 .container .box-info01 .info .info02 {
+    margin-left: 40px;
+  }
+}
+@media screen and (max-width: 780px) {
+  .viaje-info-03 .container .box-info01 .info .info02 {
+    margin-left: 0;
+  }
+}
+.viaje-info-03 .container .box-info01 .info h4 {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: #e0da50;
+}
+.viaje-info-03 .container .box-info01 .info h4::before {
+  content: '';
+  display: inline-block;
+  width: 80px;
+  height: 3px;
+  background-color: #e0da50;
+  vertical-align: 5px;
+  margin-right: 10px;
+}
+@media screen and (max-width: 993px) {
+  .viaje-info-03 .container .box-info01 .info h4::before {
+    width: 30px;
+  }
+}
+.viaje-info-03 .container .box-info01 .info h2 {
+  color: #FFF;
+  font-size: 1.6em;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  font-family: 'Playfair Display SC', serif;
+  padding: 10px 0;
+}
+@media screen and (max-width: 967px) {
+  .viaje-info-03 .container .box-info01 .info h2 {
+    font-size: 1.4em;
+  }
+}
+.viaje-info-03 .container .box-info01 .info p {
+  color: #FFF;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 100%;
+  max-width: 550px;
+}
+@media screen and (max-width: 876px) {
+  .viaje-info-03 .container .box-info01 .info p {
+    max-width: 350px;
+  }
+}
+@media screen and (max-width: 780px) {
+  .viaje-info-03 .container .box-info01 .info p {
+    max-width: 100%;
+  }
+}
+.viaje-info-03 .container .box-info01 .info .mais-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+.viaje-info-03 .container .box-info01 .info .mais-info a {
+  color: #e0da50;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  cursor: pointer;
+}
+.viaje-info-03 .container .box-info01 .info .mais-info i {
+  color: #e0da50;
+  cursor: pointer;
+}
+@media screen and (max-width: 780px) {
+  .viaje-info-03 .container .box-info01 .info {
+    position: static;
+    top: auto;
+    left: auto;
+  }
+}
+@media screen and (max-width: 780px) {
+  .viaje-info-03 .container .box-info01 {
+    width: 100%;
+    padding: 10px 20px;
+  }
+}
+@media screen and (max-width: 460px) {
+  .viaje-info-03 .container .box-info01 {
+    padding: 20px 10px;
+  }
+}
+.viaje-info-03 .container .box-info02 {
+  width: 50%;
+  height: auto;
+}
+.viaje-info-03 .container .box-info02 .box-img {
+  width: 384px;
+  height: 564px;
+  float: right;
+}
+.viaje-info-03 .container .box-info02 .box-img img {
+  width: 100%;
+  object-fit: cover;
+}
+@media screen and (max-width: 876px) {
+  .viaje-info-03 .container .box-info02 .box-img {
+    width: 100%;
+    height: auto;
+  }
+}
+@media screen and (max-width: 780px) {
+  .viaje-info-03 .container .box-info02 .box-img {
+    width: 384px;
+    height: auto;
+    position: static;
+    right: auto;
+    top: auto;
+    margin: 0 auto;
+    float: none;
+  }
+}
+@media screen and (max-width: 450px) {
+  .viaje-info-03 .container .box-info02 .box-img {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 780px) {
+  .viaje-info-03 .container .box-info02 {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 780px) {
+  .viaje-info-03 .container {
+    flex-direction: column-reverse;
+    gap: 80px;
+  }
+}
+@media screen and (max-width: 780px) {
+  .viaje-info-03 {
+    width: 100%;
+    height: auto;
   }
 }

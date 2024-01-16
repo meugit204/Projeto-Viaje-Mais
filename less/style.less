@@ -235,45 +235,58 @@ header {
 
 // Viaje-info
 .viaje-info {
-    height: 400px;
+    height: 500px;
+    margin-top: -80px;
 
     .container {
         display: flex;
         flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
         padding: 0 5px;
+        height: 100%;
+        max-width: 1100px;
 
         .box-info01 {
-            width: 60%;
-            height: 100%;
+            width: 50%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
             position: relative;
-
-            span {
-                font-size: 200px;
-                color: rgba(255, 255, 255, 0.20);
-                font-style: normal;
-                font-weight: 700;
-                line-height: normal;
-                position: absolute;
-                left: 0;
-                top: -170px;
-                z-index: 2;
-
-                @media screen and (max-width:774px) {
-                    left: 50%;
-                    transform: translate(-50%, 0);
-                    color: rgba(255, 255, 255, 0.40);
-                }
-
-                @media screen and (max-width:353px) {
-                    font-size: 150px;
-                    top: -140px;
-                }
-            }
+            margin: 70px auto 0 auto;
 
             .info {
+                display: flex;
+                flex-direction: column;
+                position: relative;
                 position: absolute;
-                top: -60px;
-                left: 60px;
+                top: -270px;
+                left: -70px;
+
+                span {
+                    font-size: 200px;
+                    color: rgba(255, 255, 255, 0.20);
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                    z-index: 2;
+                    position: absolute;
+                    left: 0;
+                    top: -130px;
+
+                    @media screen and (max-width:410px) {
+                        font-size: 120px;
+                        top: -70px;
+                    }
+                }
+
+                .info02 {
+                    margin-left: 100px;
+
+                    @media screen and (max-width:780px) {
+                        margin-left: 0;
+                    }
+                }
 
                 h4 {
                     font-size: 20px;
@@ -295,22 +308,249 @@ header {
 
                 h2 {
                     color: #FFF;
-                    font-size: 40px;
+                    font-size: 2em;
                     font-style: normal;
                     font-weight: 400;
                     line-height: normal;
                     font-family: 'Playfair Display SC', serif;
                     padding: 10px 0;
 
-                    @media screen and (max-width:997px) {
+                    @media screen and (max-width:949px) {
+                        font-size: 1.7em;
+                    }
+
+                    @media screen and (max-width:863px) {
+                        font-size: 1.4em;
+                    }
+
+                    @media screen and (max-width:780px) {
                         font-size: 2em;
                     }
 
-                    @media screen and (max-width:881px) {
-                        font-size: 1.6em;
+                    @media screen and (max-width:458px) {
+                        font-size: 1.7em;
                     }
 
-                    @media screen and (max-width:353px) {
+                    @media screen and (max-width:394px) {
+                        font-size: 1.4em;
+                    }
+                }
+
+                p {
+                    color: #FFF;
+                    font-size: 15px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    width: 100%;
+                    max-width: 550px;
+
+                    @media screen and (max-width:876px) {
+                        max-width: 350px;
+                    }
+
+                    @media screen and (max-width:780px) {
+                        max-width: 100%;
+                    }
+                }
+
+                .mais-info {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    margin-top: 10px;
+
+                    a {
+                        color: @amarelo;
+                        font-size: 20px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                        cursor: pointer;
+                    }
+
+                    i {
+                        color: @amarelo;
+                        cursor: pointer;
+                    }
+                }
+
+                @media screen and (max-width:945px) {
+                    left: -45px;
+                }
+
+                @media screen and (max-width:900px) {
+                    left: -55px;
+                }
+
+                @media screen and (max-width:780px) {
+                    position: static;
+                    top: auto;
+                    left: auto;
+                }
+            }
+
+            @media screen and (max-width:780px) {
+                width: 100%;
+            }
+
+            @media screen and (max-width:460px) {
+                padding: 20px 10px;
+            }
+        }
+
+        .box-info02 {
+            width: 40%;
+            height: 100%;
+            position: relative;
+
+            .box-img {
+                position: absolute;
+                right: 0;
+                top: -80px;
+                width: 384px;
+                height: 564px;
+
+                img {
+                    width: 100%;
+                    object-fit: cover;
+                }
+
+                @media screen and (max-width:876px) {
+                    width: 100%;
+                    height: auto;
+                }
+
+                @media screen and (max-width:780px) {
+                    width: 384px;
+                    height: auto;
+                    position: static;
+                    right: auto;
+                    top: auto;
+                    margin: 0 auto;
+                }
+
+                @media screen and (max-width:450px) {
+                    width: 90%;
+                }
+            }
+
+            @media screen and (max-width:780px) {
+                width: 100%;
+            }
+        }
+
+        @media screen and (max-width:780px) {
+            flex-direction: column-reverse;
+        }
+    }
+
+    @media screen and (max-width:780px) {
+        width: 100%;
+        height: auto;
+    }
+}
+
+// Viaje-info-02
+.viaje-info-02 {
+    height: auto;
+    margin-top: 80px;
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row-reverse;
+        align-items: center;
+        padding: 0 5px;
+        height: 100%;
+        max-width: 1100px;
+
+        .box-info01 {
+            width: 50%;
+            max-width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+
+            .info {
+                display: flex;
+                flex-direction: column;
+
+                span {
+                    font-size: 200px;
+                    color: rgba(255, 255, 255, 0.20);
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                    z-index: 2;
+                    position: absolute;
+                    left: 0;
+                    top: -130px;
+
+                    @media screen and (max-width:410px) {
+                        font-size: 120px;
+                        top: -70px;
+                    }
+                }
+
+                .info02 {
+                    margin-left: 100px;
+
+                    @media screen and (max-width:908px) {
+                        margin-left: 60px;
+                    }
+
+                    @media screen and (max-width:780px) {
+                        margin-left: 0;
+                    }
+                }
+
+                h4 {
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    color: @amarelo;
+
+                    &::before {
+                        content: '';
+                        display: inline-block;
+                        width: 80px;
+                        height: 3px;
+                        background-color: @amarelo;
+                        vertical-align: 5px;
+                        margin-right: 10px;
+
+                        @media screen and (max-width:993px) {
+                            width: 30px;
+                        }
+
+                        @media screen and (max-width:369px) {
+                            width: 20px;
+                        }
+                    }
+
+                    @media screen and (max-width:369px) {
+                        font-size: 17px;
+                    }
+                }
+
+                h2 {
+                    color: #FFF;
+                    font-size: 1.6em;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    font-family: 'Playfair Display SC', serif;
+                    padding: 10px 0;
+
+                    @media screen and (max-width:967px) {
+                        font-size: 1.4em;
+                    }
+
+                    @media screen and (max-width:359px) {
                         font-size: 1.2em;
                     }
                 }
@@ -324,20 +564,12 @@ header {
                     width: 100%;
                     max-width: 550px;
 
-                    @media screen and (max-width:963px) {
-                        max-width: 450px;
+                    @media screen and (max-width:876px) {
+                        max-width: 350px;
                     }
 
-                    @media screen and (max-width:891px) {
-                        max-width: 400px;
-                    }
-
-                    @media screen and (max-width:850px) {
-                        max-width: 340px;
-                    }
-
-                    @media screen and (max-width:774px) {
-                        max-width: 550px;
+                    @media screen and (max-width:780px) {
+                        max-width: 100%;
                     }
                 }
 
@@ -362,34 +594,29 @@ header {
                     }
                 }
 
-                @media screen and (max-width:810px) {
-                    left: 30px;
-                }
-
-                @media screen and (max-width:774px) {
+                @media screen and (max-width:780px) {
                     position: static;
                     top: auto;
                     left: auto;
-                    margin-top: 60px;
                 }
             }
 
-            @media screen and (max-width:774px) {
+            @media screen and (max-width:780px) {
                 width: 100%;
-                display: flex;
-                justify-content: center;
+                padding: 10px 20px;
+            }
+
+            @media screen and (max-width:460px) {
+                padding: 20px 10px;
             }
         }
 
         .box-info02 {
-            width: 40%;
-            height: 100%;
-            position: relative;
+            width: 50%;
+            height: auto;
 
             .box-img {
-                position: absolute;
-                right: 0;
-                top: -180px;
+
                 width: 384px;
                 height: 564px;
 
@@ -398,90 +625,101 @@ header {
                     object-fit: cover;
                 }
 
-                @media screen and (max-width:774px) {
-                    position: static;
-                    top: auto;
-                    right: auto;
-                    margin: 20px auto 0 auto;
-                }
-
-                @media screen and (max-width:393px) {
+                @media screen and (max-width:876px) {
                     width: 100%;
                     height: auto;
                 }
+
+                @media screen and (max-width:780px) {
+                    width: 384px;
+                    height: auto;
+                    position: static;
+                    right: auto;
+                    top: auto;
+                    margin: 0 auto;
+                }
+
+                @media screen and (max-width:450px) {
+                    width: 90%;
+                }
             }
 
-            @media screen and (max-width:774px) {
+            @media screen and (max-width:780px) {
                 width: 100%;
             }
         }
 
-        @media screen and (max-width:774px) {
-            display: flex;
+        @media screen and (max-width:780px) {
             flex-direction: column-reverse;
+            gap: 80px;
         }
     }
 
-    @media screen and (max-width:774px) {
+    @media screen and (max-width:780px) {
+        width: 100%;
         height: auto;
     }
 }
 
-// Viaje-info02
-.viaje-info02 {
-    height: 100%;
+// Viaje-info-03
+.viaje-info-03 {
+    height: auto;
+    margin-top: 80px;
 
     .container {
         display: flex;
         flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
         padding: 0 5px;
+        height: 100%;
+        max-width: 1100px;
 
         .box-info01 {
             width: 50%;
+            max-width: 100%;
+            height: auto;
             display: flex;
-            justify-content: center;
-            align-items: center;
             flex-direction: column;
+            align-items: center;
             position: relative;
-
-            span {
-                font-size: 200px;
-                color: rgba(255, 255, 255, 0.20);
-                font-style: normal;
-                font-weight: 700;
-                line-height: normal;
-                z-index: 2;
-                position: absolute;
-                left: -120px;
-                top: 10px;
-
-                @media screen and (max-width:850px) {
-                    left: -100px;
-                }
-
-                @media screen and (max-width:803px) {
-                    left: -80px;
-                }
-
-                @media screen and (max-width:774px) {
-                    color: rgba(255, 255, 255, 0.40);
-                    position: static;
-                    top: auto;
-                    left: auto;
-                }
-
-                @media screen and (max-width:404px) {
-                    margin-top: -140px;
-                }
-
-                @media screen and (max-width:353px) {
-                    font-size: 150px;
-                }
-            }
 
             .info {
                 display: flex;
                 flex-direction: column;
+
+                span {
+                    font-size: 200px;
+                    color: rgba(255, 255, 255, 0.20);
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                    z-index: 2;
+                    position: absolute;
+                    left: 0;
+                    top: -130px;
+
+                    @media screen and (max-width:410px) {
+                        font-size: 120px;
+                        top: -70px;
+                    }
+                }
+
+                .info02 {
+                    margin-left: 100px;
+
+                    @media screen and (max-width:908px) {
+                        margin-left: 60px;
+                    }
+
+                    @media screen and (max-width:867px) {
+                        margin-left: 40px;
+                    }
+
+                    @media screen and (max-width:780px) {
+                        margin-left: 0;
+                    }
+                }
 
                 h4 {
                     font-size: 20px;
@@ -499,39 +737,23 @@ header {
                         vertical-align: 5px;
                         margin-right: 10px;
 
-                        @media screen and (max-width:796px) {
-                            width: 60px;
-                        }
-
-                        @media screen and (max-width:377px) {
+                        @media screen and (max-width:993px) {
                             width: 30px;
                         }
-                    }
-
-                    @media screen and (max-width:796px) {
-                        font-size: 1em;
                     }
                 }
 
                 h2 {
                     color: #FFF;
-                    font-size: 40px;
+                    font-size: 1.6em;
                     font-style: normal;
                     font-weight: 400;
                     line-height: normal;
                     font-family: 'Playfair Display SC', serif;
                     padding: 10px 0;
 
-                    @media screen and (max-width:1185px) {
-                        font-size: 2em;
-                    }
-
-                    @media screen and (max-width:956px) {
-                        font-size: 1.6em;
-                    }
-
-                    @media screen and (max-width:390px) {
-                        font-size: 1.3em;
+                    @media screen and (max-width:967px) {
+                        font-size: 1.4em;
                     }
                 }
 
@@ -541,9 +763,15 @@ header {
                     font-style: normal;
                     font-weight: 400;
                     line-height: normal;
+                    width: 100%;
+                    max-width: 550px;
 
-                    @media screen and (max-width:774px) {
-                        max-width: 550px;
+                    @media screen and (max-width:876px) {
+                        max-width: 350px;
+                    }
+
+                    @media screen and (max-width:780px) {
+                        max-width: 100%;
                     }
                 }
 
@@ -567,39 +795,71 @@ header {
                         cursor: pointer;
                     }
                 }
+
+                @media screen and (max-width:780px) {
+                    position: static;
+                    top: auto;
+                    left: auto;
+                }
             }
 
-            @media screen and (max-width:774px) {
+            @media screen and (max-width:780px) {
                 width: 100%;
+                padding: 10px 20px;
+            }
+
+            @media screen and (max-width:460px) {
+                padding: 20px 10px;
             }
         }
 
         .box-info02 {
             width: 50%;
-            height: 100%;
+            height: auto;
 
             .box-img {
-                width: 300px;
-                height: 350px;
+                width: 384px;
+                height: 564px;
+                float: right;
 
                 img {
                     width: 100%;
                     object-fit: cover;
                 }
 
-                @media screen and (max-width:774px) {
-                    margin: 20px auto 0 auto;
+                @media screen and (max-width:876px) {
+                    width: 100%;
+                    height: auto;
                 }
 
-                @media screen and (max-width:404px) {
-                    width: 100%;
-                    height: 100%;
+                @media screen and (max-width:780px) {
+                    width: 384px;
+                    height: auto;
+                    position: static;
+                    right: auto;
+                    top: auto;
+                    margin: 0 auto;
+                    float: none;
+                }
+
+                @media screen and (max-width:450px) {
+                    width: 90%;
                 }
             }
 
-            @media screen and (max-width:774px) {
+            @media screen and (max-width:780px) {
                 width: 100%;
             }
         }
+
+        @media screen and (max-width:780px) {
+            flex-direction: column-reverse;
+            gap: 80px;
+        }
+    }
+
+    @media screen and (max-width:780px) {
+        width: 100%;
+        height: auto;
     }
 }
