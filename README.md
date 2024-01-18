@@ -50,7 +50,7 @@ Este projeto consiste em uma página web dedicada a fornecer informações inspi
 Este projeto visa proporcionar uma plataforma cativante para entusiastas de viagens, montanhas e caminhadas, compartilhando informações valiosas e inspirando novas aventuras. Sua contribuição é bem-vinda para enriquecer ainda mais essa experiência!
 
 
-![Texto Alternativo](https://github.com/meugit204/imagens/blob/66e4b94faaf66391b505515de6e9b15ac7aab79c/lista%20de%20compras.png)
+![Texto Alternativo](https://github.com/meugit204/imagens/blob/188dc8cb9bd1e36e57ffc08a888ab93f7d9fb67e/viaje-mais.png)
 
  
  
